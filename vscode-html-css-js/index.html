@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aashirya Srivastava — Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Aashirya Srivastava, B.Tech CSE (Data Science & AI) student at Shri Ramswaroop Memorial University."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="paper-grain-overlay" aria-hidden="true"></div>
+
+    <!-- Editorial Shutter Wipe Overlay for Section Navigation -->
+    <div id="shutter-overlay" class="shutter-overlay" aria-hidden="true">
+      <div class="shutter-band band-1"></div>
+      <div class="shutter-band band-2"></div>
+      <div class="shutter-band band-3"></div>
+      <div class="shutter-label-wrap">
+        <span id="shutter-label" class="shutter-label"></span>
+      </div>
+    </div>
+
+    <div class="site-shell">
+      <!-- Top Bar (3-Zone Editorial Contract) -->
+      <header id="site-header" class="site-header">
+        <div class="container header-inner">
+          <a href="#home" class="brand-wordmark" data-nav="home">Aashirya Srivastava</a>
+
+          <nav class="desktop-nav" aria-label="Primary navigation">
+            <a href="#home" class="nav-link is-active" data-nav="home">Home</a>
+            <a href="#about" class="nav-link" data-nav="about">About</a>
+            <a href="#skills" class="nav-link" data-nav="skills">Skills</a>
+            <a href="#work" class="nav-link" data-nav="work">Work</a>
+            <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <button type="button" class="btn btn-primary btn-sm desktop-cta" data-nav="contact">
+              Let's Talk
+            </button>
+            <button
+              type="button"
+              id="mobile-menu-toggle"
+              class="mobile-menu-btn"
+              aria-expanded="false"
+              aria-controls="mobile-nav-drawer"
+              aria-label="Open navigation menu"
+            >
+              <span class="hamburger-lines" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+
+        <nav id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile navigation" hidden>
+          <a href="#home" class="mobile-nav-link is-active" data-nav="home">Home</a>
+          <a href="#about" class="mobile-nav-link" data-nav="about">About</a>
+          <a href="#skills" class="mobile-nav-link" data-nav="skills">Skills</a>
+          <a href="#work" class="mobile-nav-link" data-nav="work">Work</a>
+          <a href="#contact" class="mobile-nav-link" data-nav="contact">Contact</a>
+          <button type="button" class="btn btn-primary mobile-cta" data-nav="contact">
+            Let's Talk
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section stationery-rule section-block">
+          <div class="container">
+            <div class="hero-grid">
+              <div class="hero-copy">
+                <div>
+                  <p class="kicker">Second Year · B.Tech CSE (DS + AI) · SRMU</p>
+                  <h1 class="hero-title">
+                    Hello! I am Aashirya Srivastava, welcome to my portfolio!
+                  </h1>
+                  <p class="hero-lead">
+                    I'm a second-year Computer Science undergraduate specializing in Data Science &amp;
+                    Artificial Intelligence at Shri Ramswaroop Memorial University. I care about
+                    turning messy, unverified inputs into clean insight—and crafting interfaces that
+                    feel calm and human to use.
+                  </p>
+                  <div class="hero-cta-row">
+                    <button type="button" class="btn btn-primary" data-nav="contact">
+                      Contact Me
+                    </button>
+                    <button type="button" class="btn btn-outline" data-nav="skills">
+                      Explore Skills ↘
+                    </button>
+                  </div>
+                </div>
+
+                <div class="hero-social-row">
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                  >
+                    GitHub ↗
+                  </a>
+                  <span class="dot-sep" aria-hidden="true">·</span>
+                  <a
+                    href="https://www.linkedin.com/in/aashirya-srivastava-a9819a428"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                  >
+                    LinkedIn ↗
+                  </a>
+                  <span class="dot-sep hide-mobile" aria-hidden="true">·</span>
+                  <a href="mailto:aashirya12007@gmail.com" class="text-link email-wrap">
+                    aashirya12007@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Box-Free Circular Portrait with Fragment Disintegration -->
+              <div class="hero-portrait-col">
+                <div class="orbital-wrap">
+                  <div id="orbital-ring" class="orbital-ring" aria-hidden="true"></div>
+
+                  <div
+                    id="portrait-stage"
+                    class="portrait-circle"
+                    data-reveal-state="hidden"
+                  >
+                    <img
+                      id="portrait-img"
+                      src="./assets/portrait.jpg"
+                      alt="Portrait of Aashirya Srivastava"
+                      class="portrait-img"
+                    />
+
+                    <div id="portrait-overlay" class="portrait-overlay">
+                      <div id="fragment-grid" class="fragment-grid" aria-hidden="true"></div>
+                      <button
+                        type="button"
+                        id="reveal-portrait-btn"
+                        class="reveal-trigger-btn"
+                        aria-label="Click me to reveal portrait photo"
+                      >
+                        <span class="reveal-eye-badge" aria-hidden="true">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                            <circle cx="12" cy="12" r="3" />
+                          </svg>
+                        </span>
+                        <span class="reveal-title">Click me</span>
+                        <span class="reveal-sub">Tap to shatter &amp; reveal portrait</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" id="replay-reveal-btn" class="replay-btn" hidden>
+                  ↺ Replay reveal
+                </button>
+              </div>
+            </div>
+
+            <!-- 4-Column Academic Credential Strip -->
+            <div class="credential-strip">
+              <div class="paper-card credential-card">
+                <p class="cred-label">University</p>
+                <p class="cred-value">Shri Ramswaroop Memorial University</p>
+              </div>
+              <div class="paper-card credential-card">
+                <p class="cred-label">Degree Track</p>
+                <p class="cred-value">B.Tech CSE (DS + AI) · Second Year</p>
+              </div>
+              <div class="paper-card credential-card hover-amber">
+                <p class="cred-label">University Roll No.</p>
+                <p class="cred-value mono amber">202510101150010</p>
+              </div>
+              <div class="paper-card credential-card hover-sage">
+                <p class="cred-label">Academic Group</p>
+                <p class="cred-value mono sage">Group 31</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Editorial Marquee Ribbon -->
+        <div class="marquee-ribbon" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Frontend Development</span><span class="amber">·</span>
+            <span>Data Cleaning</span><span class="amber">·</span>
+            <span>Critical Thinking</span><span class="amber">·</span>
+            <span>Design Thinking</span><span class="amber">·</span>
+            <span>Leadership</span><span class="amber">·</span>
+            <span>Teamwork</span><span class="amber">·</span>
+            <span>Frontend Development</span><span class="amber">·</span>
+            <span>Data Cleaning</span><span class="amber">·</span>
+            <span>Critical Thinking</span><span class="amber">·</span>
+            <span>Design Thinking</span><span class="amber">·</span>
+            <span>Leadership</span><span class="amber">·</span>
+            <span>Teamwork</span><span class="amber">·</span>
+            <span>Frontend Development</span><span class="amber">·</span>
+            <span>Data Cleaning</span><span class="amber">·</span>
+            <span>Critical Thinking</span><span class="amber">·</span>
+            <span>Design Thinking</span><span class="amber">·</span>
+            <span>Leadership</span><span class="amber">·</span>
+            <span>Teamwork</span><span class="amber">·</span>
+          </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section-pad section-block">
+          <div class="container">
+            <div class="about-grid">
+              <div class="about-narrative">
+                <p class="section-index">01. About Me</p>
+                <h2 class="section-heading">
+                  Curious about how clean data and human-centered design meet.
+                </h2>
+                <div class="prose">
+                  <p>
+                    As a second-year student in B.Tech Computer Science &amp; Engineering (Data
+                    Science + Artificial Intelligence) at
+                    <strong>Shri Ramswaroop Memorial University</strong>, I spend my time learning
+                    how technical rigor and everyday clarity reinforce each other. Whether I am
+                    organizing messy raw datasets or building interactive web pages, my goal is the
+                    same: make the underlying structure dependable and the surface effortless to
+                    read.
+                  </p>
+                  <p>
+                    Inside Group 31, I enjoy stepping into collaborative lab assignments where
+                    critical thinking, design thinking, and steady teamwork turn early sketches into
+                    working solutions. Outside coursework, I continue refining my frontend
+                    craft—paying close attention to typography, form accessibility, and honest
+                    visual hierarchy.
+                  </p>
+                </div>
+              </div>
+
+              <div class="paper-card record-card">
+                <h3 class="record-title">Academic &amp; Contact Record</h3>
+                <dl class="record-list">
+                  <div class="record-row">
+                    <dt>Student</dt>
+                    <dd><strong>Aashirya Srivastava</strong></dd>
+                  </div>
+                  <div class="record-row">
+                    <dt>Roll Number</dt>
+                    <dd class="mono amber">202510101150010</dd>
+                  </div>
+                  <div class="record-row">
+                    <dt>Program &amp; Year</dt>
+                    <dd>B.Tech CSE (DS + AI) · Second Year</dd>
+                  </div>
+                  <div class="record-row">
+                    <dt>Group</dt>
+                    <dd class="mono sage">Group 31</dd>
+                  </div>
+                  <div class="record-row">
+                    <dt>Email</dt>
+                    <dd class="email-dd">
+                      <a href="mailto:aashirya12007@gmail.com" class="text-link">
+                        aashirya12007@gmail.com
+                      </a>
+                      <button
+                        type="button"
+                        id="copy-email-btn"
+                        class="copy-btn"
+                        aria-label="Copy email address"
+                      >
+                        Copy
+                      </button>
+                    </dd>
+                  </div>
+                  <div class="record-row">
+                    <dt>WhatsApp</dt>
+                    <dd class="mono">+91 8009375166</dd>
+                  </div>
+                  <div class="record-row record-row-last">
+                    <dt>Profiles</dt>
+                    <dd class="profile-links">
+                      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">
+                        GitHub ↗
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/aashirya-srivastava-a9819a428"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-link"
+                      >
+                        LinkedIn ↗
+                      </a>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-pad section-block">
+          <div class="container">
+            <div class="skills-header">
+              <div class="skills-title-wrap">
+                <p class="section-index">02. Skills Learned</p>
+                <h2 class="section-heading">Capabilities shaped through coursework &amp; practice.</h2>
+              </div>
+
+              <div class="segmented-tabs" role="tablist" aria-label="Filter skills by category">
+                <button type="button" role="tab" aria-selected="true" class="tab-btn is-selected" data-category="all">
+                  All Skills (6)
+                </button>
+                <button type="button" role="tab" aria-selected="false" class="tab-btn" data-category="engineering">
+                  Engineering &amp; Data (2)
+                </button>
+                <button type="button" role="tab" aria-selected="false" class="tab-btn" data-category="thinking">
+                  Thinking &amp; Design (2)
+                </button>
+                <button type="button" role="tab" aria-selected="false" class="tab-btn" data-category="collaboration">
+                  Collaboration (2)
+                </button>
+              </div>
+            </div>
+
+            <div id="skills-grid" class="skills-grid"></div>
+
+            <div id="skill-inspector" class="paper-card-elevated skill-inspector" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <!-- Selected Explorations Section -->
+        <section id="work" class="section-pad section-block">
+          <div class="container">
+            <div class="work-intro">
+              <p class="section-index">03. Selected Explorations</p>
+              <h2 class="section-heading">How those skills come together in practice.</h2>
+              <p class="work-sub">
+                A closer look at coursework workflows, frontend builds, and Group 31 collaborative
+                methods. Select any notebook to read the full breakdown.
+              </p>
+            </div>
+
+            <div id="work-grid" class="work-grid"></div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-pad section-block">
+          <div class="container">
+            <div class="contact-grid">
+              <div class="contact-sidebar">
+                <div>
+                  <p class="section-index">04. Contact Me</p>
+                  <h2 class="section-heading">Let's connect on a project or coursework idea.</h2>
+                  <p class="contact-desc">
+                    Send a message through the validated contact form to notify me at
+                    <strong>aashirya12007@gmail.com</strong>, or start a direct WhatsApp
+                    conversation right away.
+                  </p>
+                </div>
+
+                <div class="paper-card whatsapp-card">
+                  <div class="wa-top">
+                    <div>
+                      <p class="wa-kicker">Direct WhatsApp</p>
+                      <p class="wa-number">+91 8009375166</p>
+                    </div>
+                  </div>
+                  <p class="wa-note">
+                    Anything you draft in the message box on the right will automatically pre-fill
+                    into your WhatsApp chat link.
+                  </p>
+                  <a
+                    id="whatsapp-direct-link"
+                    href="https://wa.me/918009375166?text=Hi%20Aashirya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sage btn-full"
+                  >
+                    Message on WhatsApp ↗
+                  </a>
+                </div>
+
+                <div class="paper-card direct-links-card">
+                  <div class="direct-row">
+                    <span>Email</span>
+                    <a href="mailto:aashirya12007@gmail.com" class="text-link">aashirya12007@gmail.com</a>
+                  </div>
+                  <div class="direct-row">
+                    <span>LinkedIn</span>
+                    <a
+                      href="https://www.linkedin.com/in/aashirya-srivastava-a9819a428"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-link"
+                    >
+                      aashirya-srivastava ↗
+                    </a>
+                  </div>
+                  <div class="direct-row">
+                    <span>GitHub</span>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">
+                      github.com ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="paper-card-elevated form-card">
+                <form id="contact-form" novalidate>
+                  <div class="form-head">
+                    <h3 class="form-title">Send a Note</h3>
+                    <p class="form-sub">
+                      All required fields are verified before dispatching notification to
+                      aashirya12007@gmail.com.
+                    </p>
+                  </div>
+
+                  <div id="form-alert" class="form-alert" role="alert" hidden></div>
+
+                  <div class="field-group">
+                    <label for="contact-name" class="field-label">
+                      Your Name <span class="amber">*</span>
+                    </label>
+                    <input
+                      id="contact-name"
+                      name="name"
+                      type="text"
+                      autocomplete="name"
+                      required
+                      placeholder="e.g., Ananya Sharma"
+                      class="field-input"
+                    />
+                    <p id="error-name" class="field-error" hidden></p>
+                  </div>
+
+                  <div class="field-row-2">
+                    <div class="field-group">
+                      <label for="contact-email" class="field-label">
+                        Email Address <span class="amber">*</span>
+                      </label>
+                      <input
+                        id="contact-email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required
+                        placeholder="you@example.com"
+                        class="field-input"
+                      />
+                      <p id="error-email" class="field-error" hidden></p>
+                    </div>
+
+                    <div class="field-group">
+                      <label for="contact-phone" class="field-label">
+                        Phone / WhatsApp <span class="muted">(optional)</span>
+                      </label>
+                      <input
+                        id="contact-phone"
+                        name="phone"
+                        type="tel"
+                        autocomplete="tel"
+                        placeholder="+91 98765 43210"
+                        class="field-input"
+                      />
+                      <p id="error-phone" class="field-error" hidden></p>
+                    </div>
+                  </div>
+
+                  <div class="field-group">
+                    <div class="label-split">
+                      <label for="contact-message" class="field-label">
+                        Message <span class="amber">*</span>
+                      </label>
+                      <span id="message-counter" class="char-counter mono">0/2000</span>
+                    </div>
+                    <textarea
+                      id="contact-message"
+                      name="message"
+                      rows="4"
+                      required
+                      placeholder="Share details about your project, study collaboration, or inquiry..."
+                      class="field-input field-textarea"
+                    ></textarea>
+                    <p id="error-message" class="field-error" hidden></p>
+                  </div>
+
+                  <div class="form-footer">
+                    <button type="submit" id="submit-btn" class="btn btn-primary">
+                      Send Message
+                    </button>
+                    <span class="notify-hint">Notifies aashirya12007@gmail.com</span>
+                  </div>
+                </form>
+
+                <!-- Confirmation Panel -->
+                <div id="contact-confirmation" class="confirmation-panel" role="status" aria-live="polite" hidden>
+                  <h3 id="confirm-heading" class="confirm-title"></h3>
+                  <p id="confirm-body" class="confirm-body"></p>
+                  <div class="confirm-meta">
+                    <div><span>Recipient</span><strong id="confirm-recipient">aashirya12007@gmail.com</strong></div>
+                    <div><span>Reply-To</span><strong id="confirm-replyto"></strong></div>
+                    <div><span>Reference</span><strong id="confirm-ref" class="mono amber"></strong></div>
+                  </div>
+                  <div class="confirm-actions">
+                    <button type="button" id="send-another-btn" class="btn btn-primary">
+                      Send another message
+                    </button>
+                    <a
+                      id="confirm-wa-link"
+                      href="https://wa.me/918009375166"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-outline"
+                    >
+                      Follow up on WhatsApp ↗
+                    </a>
+                    <a id="confirm-mailto-link" href="mailto:aashirya12007@gmail.com" class="text-link">
+                      Open in Mail app ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <p class="footer-name">Aashirya Srivastava</p>
+              <p class="footer-desc">
+                Second Year · B.Tech Computer Science &amp; Engineering (Data Science + Artificial
+                Intelligence) · Shri Ramswaroop Memorial University
+              </p>
+              <p class="footer-roll mono">Roll No. 202510101150010 · Group 31</p>
+            </div>
+
+            <div class="footer-col">
+              <p class="footer-col-title">Sections</p>
+              <ul>
+                <li><a href="#home" data-nav="home">Home</a></li>
+                <li><a href="#about" data-nav="about">About</a></li>
+                <li><a href="#skills" data-nav="skills">Skills</a></li>
+                <li><a href="#work" data-nav="work">Work</a></li>
+                <li><a href="#contact" data-nav="contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <p class="footer-col-title">Connect</p>
+              <ul>
+                <li><a href="mailto:aashirya12007@gmail.com">aashirya12007@gmail.com</a></li>
+                <li>
+                  <a
+                    href="https://wa.me/918009375166?text=Hi%20Aashirya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WhatsApp (+91 8009375166) ↗
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/aashirya-srivastava-a9819a428"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn ↗
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    GitHub ↗
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© <span id="footer-year"></span> Aashirya Srivastava. Crafted with care.</p>
+            <p>SRMU · Lucknow, India</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Work Detail Modal -->
+    <div id="work-modal-backdrop" class="modal-backdrop" hidden>
+      <div
+        id="work-modal"
+        class="paper-card-elevated modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <div class="modal-head">
+          <div>
+            <p id="modal-kicker" class="modal-kicker"></p>
+            <h3 id="modal-title" class="modal-title"></h3>
+          </div>
+          <button type="button" id="modal-close-x" class="modal-close-x" aria-label="Close project note">
+            ✕
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div>
+            <p class="modal-label">Problem Addressed</p>
+            <p id="modal-problem" class="modal-text"></p>
+          </div>
+          <div>
+            <p class="modal-label">Structured Approach</p>
+            <ul id="modal-approach" class="modal-steps"></ul>
+          </div>
+          <div class="modal-foot">
+            <p id="modal-skills" class="modal-skills"></p>
+            <button type="button" id="modal-close-btn" class="btn btn-primary btn-sm">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

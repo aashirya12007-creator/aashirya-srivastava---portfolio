@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aashirya Srivastava — Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Aashirya Srivastava — Second-year B.Tech CSE (Data Science &amp; AI) student at Shri Ramswaroop Memorial University."
+    />
+    <meta property="og:title" content="Aashirya Srivastava — Portfolio" />
+    <meta
+      property="og:description"
+      content="Frontend Development, Data Cleaning, Critical &amp; Design Thinking, Leadership, and Teamwork — B.Tech CSE (DS + AI) at SRMU."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- Subtle cotton-rag paper texture across dark canvas -->
+      <div class="paper-grain-overlay" aria-hidden="true"></div>
+
+      <!-- Editorial Shutter Wipe Overlay for Section Navigation -->
+      <div id="section-transition-overlay" class="transition-overlay" aria-hidden="true">
+        <div class="transition-band transition-band-1"></div>
+        <div class="transition-band transition-band-2"></div>
+        <div class="transition-band transition-band-3"></div>
+        <div class="transition-title-wrap">
+          <span id="transition-chapter-label" class="transition-chapter-label"></span>
+        </div>
+      </div>
+
+      <div class="app-content">
+        <!-- Sticky 3-Zone Header -->
+        <header id="site-header" class="site-header">
+          <div class="container header-inner">
+            <a href="#home" class="brand-wordmark" data-nav="home">Aashirya Srivastava</a>
+
+            <nav class="desktop-nav" aria-label="Primary navigation">
+              <a href="#home" class="nav-link is-active" data-nav="home" aria-current="page">
+                <span>Home</span>
+                <span class="nav-underline" aria-hidden="true"></span>
+              </a>
+              <a href="#about" class="nav-link" data-nav="about">
+                <span>About</span>
+                <span class="nav-underline" aria-hidden="true"></span>
+              </a>
+              <a href="#skills" class="nav-link" data-nav="skills">
+                <span>Skills</span>
+                <span class="nav-underline" aria-hidden="true"></span>
+              </a>
+              <a href="#work" class="nav-link" data-nav="work">
+                <span>Work</span>
+                <span class="nav-underline" aria-hidden="true"></span>
+              </a>
+              <a href="#contact" class="nav-link" data-nav="contact">
+                <span>Contact</span>
+                <span class="nav-underline" aria-hidden="true"></span>
+              </a>
+            </nav>
+
+            <div class="header-actions">
+              <button type="button" class="btn-amber btn-sm desktop-cta" data-nav="contact">
+                Let's Talk
+              </button>
+              <button
+                type="button"
+                id="mobile-menu-toggle"
+                class="mobile-menu-btn"
+                aria-expanded="false"
+                aria-controls="mobile-nav-drawer"
+                aria-label="Open navigation menu"
+              >
+                <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="4" y1="6" x2="20" y2="6" />
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+                <svg class="icon-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Navigation Drawer -->
+          <nav id="mobile-nav-drawer" class="mobile-drawer hidden" aria-label="Mobile navigation">
+            <a href="#home" class="mobile-nav-link is-active" data-nav="home">Home</a>
+            <a href="#about" class="mobile-nav-link" data-nav="about">About</a>
+            <a href="#skills" class="mobile-nav-link" data-nav="skills">Skills</a>
+            <a href="#work" class="mobile-nav-link" data-nav="work">Work</a>
+            <a href="#contact" class="mobile-nav-link" data-nav="contact">Contact</a>
+            <button type="button" class="btn-amber mobile-drawer-cta" data-nav="contact">
+              Let's Talk
+            </button>
+          </nav>
+        </header>
+
+        <main class="main-sections">
+          <!-- HERO SECTION WITH PULL-CORD LAMP INTRO -->
+          <section id="home" class="hero-section" data-lamp-lit="false" data-section>
+            <div class="hero-room-glow" aria-hidden="true"></div>
+
+            <div class="hero-container">
+              <!-- Interactive Pull-Cord Floor Lamp -->
+              <div class="lamp-lane">
+                <div class="lamp-wrapper">
+                  <!-- Soft Radial Bulb Halo + Feathered Triangular Light Cone -->
+                  <div class="lamp-light-cone-wrap" aria-hidden="true">
+                    <div class="lamp-bulb-halo"></div>
+                    <svg viewBox="0 0 600 500" class="lamp-cone-svg" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="lampConeGradient" x1="86%" y1="0%" x2="36%" y2="100%">
+                          <stop offset="0%" stop-color="#ffdb66" stop-opacity="0.34" />
+                          <stop offset="42%" stop-color="#ffbe0b" stop-opacity="0.13" />
+                          <stop offset="100%" stop-color="#ffbe0b" stop-opacity="0" />
+                        </linearGradient>
+                        <filter id="coneSoftEdge" x="-15%" y="-10%" width="130%" height="125%">
+                          <feGaussianBlur stdDeviation="10" />
+                        </filter>
+                      </defs>
+                      <polygon
+                        points="488,0 554,0 596,500 24,500"
+                        fill="url(#lampConeGradient)"
+                        filter="url(#coneSoftEdge)"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- Minimalist Floor / Desk Lamp SVG -->
+                  <div class="lamp-svg-box">
+                    <svg viewBox="0 0 160 290" class="lamp-svg" aria-hidden="true">
+                      <defs>
+                        <radialGradient id="bulbGlowGrad" cx="50%" cy="50%" r="50%">
+                          <stop offset="0%" stop-color="#fff7d6" />
+                          <stop offset="45%" stop-color="#ffdb66" />
+                          <stop offset="100%" stop-color="#ffbe0b" />
+                        </radialGradient>
+                      </defs>
+
+                      <path
+                        id="lamp-arm"
+                        d="M 118 282 L 118 52 Q 118 24 94 24 L 68 24"
+                        fill="none"
+                        stroke="#3C3833"
+                        stroke-width="3.5"
+                        stroke-linecap="round"
+                      />
+                      <ellipse
+                        id="lamp-base"
+                        cx="118"
+                        cy="283"
+                        rx="24"
+                        ry="4.5"
+                        fill="#24221F"
+                        stroke="#433E38"
+                        stroke-width="1.2"
+                      />
+                      <circle
+                        id="lamp-bulb"
+                        cx="68"
+                        cy="64"
+                        r="11"
+                        fill="#252320"
+                        stroke="#3F3B35"
+                        stroke-width="1.2"
+                      />
+                      <path
+                        id="lamp-shade"
+                        d="M 48 26 L 88 26 L 100 62 L 36 62 Z"
+                        fill="#181715"
+                        stroke="#4E4840"
+                        stroke-width="1.8"
+                        stroke-linejoin="round"
+                      />
+                      <line
+                        id="lamp-shade-rim"
+                        x1="39"
+                        y1="61"
+                        x2="97"
+                        y2="61"
+                        stroke="#2D2A26"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                      />
+                      <line
+                        id="lamp-cord-line"
+                        x1="54"
+                        y1="62"
+                        x2="54"
+                        y2="124"
+                        stroke="#D5CBB8"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        id="lamp-cord-tassel"
+                        cx="54"
+                        cy="130"
+                        r="6.5"
+                        fill="#E09F3E"
+                        stroke="#121110"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+
+                    <button
+                      type="button"
+                      id="lamp-pull-cord"
+                      data-testid="lamp-pull-cord"
+                      class="lamp-cord-hit"
+                      aria-pressed="false"
+                      aria-label="Pull the string to turn on the lamp"
+                    ></button>
+
+                    <div id="lamp-pull-hint" class="lamp-pull-hint" aria-hidden="true">
+                      <span>Pull the string</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Initial Dark Intro Prompt -->
+              <div id="lamp-dark-prompt" class="lamp-dark-prompt">
+                <div class="lamp-dark-prompt-inner">
+                  <p class="lamp-prompt-title">Turn on the lamp</p>
+                  <p class="lamp-prompt-sub">
+                    Click or tug the hanging string on the right to illuminate the portfolio.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Illuminated 2-Column Editorial Hero -->
+              <div class="hero-content-grid" aria-hidden="true" id="hero-illuminated-content">
+                <div class="hero-left">
+                  <div>
+                    <p class="hero-kicker">Second Year · B.Tech CSE (DS + AI) · SRMU</p>
+                    <h1 class="hero-heading">
+                      Hello! I am Aashirya Srivastava, welcome to my portfolio!
+                    </h1>
+                    <p class="hero-bio">
+                      I'm a second-year Computer Science undergraduate specializing in Data Science
+                      &amp; Artificial Intelligence at Shri Ramswaroop Memorial University. I care
+                      about turning messy, unverified inputs into clean insight—and crafting
+                      interfaces that feel calm and human to use.
+                    </p>
+
+                    <div class="hero-cta-row">
+                      <button type="button" class="btn-amber hero-focusable" data-nav="contact" tabindex="-1">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <rect x="2" y="4" width="20" height="16" rx="2" />
+                          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <span>Contact Me</span>
+                      </button>
+
+                      <button type="button" class="btn-outline hero-focusable" data-nav="skills" tabindex="-1">
+                        <span>Explore Skills</span>
+                        <svg class="btn-icon arrow-diag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M7 7 17 17" />
+                          <path d="M17 7v10H7" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="hero-links-row">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hero-text-link hero-focusable" tabindex="-1">
+                      <span>GitHub</span>
+                      <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7" />
+                        <path d="M7 7h10v10" />
+                      </svg>
+                    </a>
+                    <span class="dot-sep" aria-hidden="true">·</span>
+                    <a href="https://www.linkedin.com/in/aashirya-srivastava-a9819a428" target="_blank" rel="noopener noreferrer" class="hero-text-link hero-focusable" tabindex="-1">
+                      <span>LinkedIn</span>
+                      <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7" />
+                        <path d="M7 7h10v10" />
+                      </svg>
+                    </a>
+                    <span class="dot-sep desktop-only-dot" aria-hidden="true">·</span>
+                    <a href="mailto:aashirya12007@gmail.com" class="hero-text-link hero-email-link hero-focusable" tabindex="-1">
+                      aashirya12007@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Right Column: Free-Floating Circular Interactive Portrait Reveal -->
+                <div class="hero-right">
+                  <div class="portrait-orbit-wrap">
+                    <div class="portrait-orbit-ring" aria-hidden="true"></div>
+                    <div
+                      id="circular-portrait-stage"
+                      data-testid="circular-portrait-stage"
+                      data-reveal-state="hidden"
+                      class="portrait-circle"
+                    >
+                      <div class="portrait-img-wrap">
+                        <img
+                          id="portrait-image"
+                          src="assets/portrait.jpg"
+                          alt="Portrait of Aashirya Srivastava"
+                          class="portrait-img"
+                        />
+                        <div id="portrait-fallback" class="portrait-fallback hidden">
+                          <span class="portrait-fallback-initials">AS</span>
+                          <span class="portrait-fallback-name">Aashirya Srivastava</span>
+                        </div>
+                      </div>
+
+                      <!-- 7x7 Disintegrating Black Fragment Overlay -->
+                      <div id="portrait-overlay" class="portrait-overlay">
+                        <div id="fragment-grid" class="fragment-grid" aria-hidden="true"></div>
+                        <button
+                          type="button"
+                          id="portrait-reveal-btn"
+                          class="portrait-reveal-btn hero-focusable"
+                          tabindex="-1"
+                          aria-label="Click me to reveal portrait photo"
+                        >
+                          <span class="reveal-eye-badge" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                              <circle cx="12" cy="12" r="3" />
+                            </svg>
+                          </span>
+                          <span class="reveal-cta-title">Click me</span>
+                          <span class="reveal-cta-sub">Tap to shatter &amp; reveal portrait</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    id="replay-reveal-btn"
+                    class="replay-reveal-btn hidden hero-focusable"
+                    tabindex="-1"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                      <path d="M3 3v5h5" />
+                    </svg>
+                    <span>Replay reveal</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- 4-Column Academic Credential Strip -->
+              <div id="hero-credentials" class="credentials-grid" aria-hidden="true">
+                <div class="paper-card credential-card">
+                  <p class="cred-label">University</p>
+                  <p class="cred-value">Shri Ramswaroop Memorial University</p>
+                </div>
+                <div class="paper-card credential-card">
+                  <p class="cred-label">Degree Track</p>
+                  <p class="cred-value">B.Tech CSE (DS + AI) · Second Year</p>
+                </div>
+                <div class="paper-card credential-card credential-amber">
+                  <p class="cred-label">University Roll No.</p>
+                  <p class="cred-value font-mono-tabular text-amber">202510101150010</p>
+                </div>
+                <div class="paper-card credential-card credential-sage">
+                  <p class="cred-label">Academic Group</p>
+                  <p class="cred-value font-mono-tabular text-sage">Group 31</p>
+                </div>
+              </div>
+
+              <!-- Corner Skip Intro Button -->
+              <div id="skip-intro-wrap" class="skip-intro-wrap">
+                <button type="button" id="skip-intro-btn" class="skip-intro-btn">
+                  Skip intro
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- EDITORIAL MARQUEE DIVIDER -->
+          <div class="marquee-band" aria-hidden="true">
+            <div class="animate-editorial-marquee" id="marquee-track"></div>
+          </div>
+
+          <!-- ABOUT SECTION -->
+          <section id="about" class="page-section" data-section>
+            <div class="container">
+              <div class="about-grid">
+                <div class="about-narrative reveal-on-scroll">
+                  <p class="section-kicker">01. About Me</p>
+                  <h2 class="section-heading">
+                    Curious about how clean data and human-centered design meet.
+                  </h2>
+                  <div class="prose-stack">
+                    <p>
+                      As a second-year student in B.Tech Computer Science &amp; Engineering (Data
+                      Science + Artificial Intelligence) at
+                      <span class="text-ink-strong">Shri Ramswaroop Memorial University</span>, I
+                      spend my time learning how technical rigor and everyday clarity reinforce each
+                      other. Whether I am organizing messy raw datasets or building interactive web
+                      pages, my goal is the same: make the underlying structure dependable and the
+                      surface effortless to read.
+                    </p>
+                    <p>
+                      Inside Group 31, I enjoy stepping into collaborative lab assignments where
+                      critical thinking, design thinking, and steady teamwork turn early sketches
+                      into working solutions. Outside coursework, I continue refining my frontend
+                      craft—paying close attention to typography, form accessibility, and honest
+                      visual hierarchy.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="about-folio reveal-on-scroll">
+                  <div class="paper-card folio-card">
+                    <h3 class="folio-heading">Academic &amp; Contact Record</h3>
+                    <dl class="folio-list">
+                      <div class="folio-row">
+                        <dt>Student</dt>
+                        <dd class="text-ink-strong">Aashirya Srivastava</dd>
+                      </div>
+                      <div class="folio-row">
+                        <dt>Roll Number</dt>
+                        <dd class="font-mono-tabular text-amber">202510101150010</dd>
+                      </div>
+                      <div class="folio-row">
+                        <dt>Program &amp; Year</dt>
+                        <dd>B.Tech CSE (DS + AI) · Second Year</dd>
+                      </div>
+                      <div class="folio-row">
+                        <dt>Group</dt>
+                        <dd class="font-mono-tabular text-sage">Group 31</dd>
+                      </div>
+                      <div class="folio-row folio-row-center">
+                        <dt>Email</dt>
+                        <dd class="folio-email-dd">
+                          <a href="mailto:aashirya12007@gmail.com" class="folio-link-truncate">
+                            aashirya12007@gmail.com
+                          </a>
+                          <button
+                            type="button"
+                            id="copy-email-btn"
+                            class="copy-btn"
+                            aria-label="Copy email address"
+                          >
+                            <svg id="copy-icon-default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                              <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                            </svg>
+                            <svg id="copy-icon-done" class="hidden text-sage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                          </button>
+                        </dd>
+                      </div>
+                      <div class="folio-row">
+                        <dt>WhatsApp</dt>
+                        <dd class="font-mono-tabular">+91 8009375166</dd>
+                      </div>
+                      <div class="folio-row folio-row-last">
+                        <dt>Profiles</dt>
+                        <dd class="folio-profiles">
+                          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hero-text-link">
+                            <span>GitHub</span>
+                            <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                              <path d="M7 17 17 7" />
+                              <path d="M7 7h10v10" />
+                            </svg>
+                          </a>
+                          <a href="https://www.linkedin.com/in/aashirya-srivastava-a9819a428" target="_blank" rel="noopener noreferrer" class="hero-text-link">
+                            <span>LinkedIn</span>
+                            <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                              <path d="M7 17 17 7" />
+                              <path d="M7 7h10v10" />
+                            </svg>
+                          </a>
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SKILLS LEARNED SECTION -->
+          <section id="skills" class="page-section" data-section>
+            <div class="container">
+              <div class="skills-header">
+                <div class="skills-title-box">
+                  <p class="section-kicker">02. Skills Learned</p>
+                  <h2 class="section-heading">
+                    Capabilities shaped through coursework &amp; practice.
+                  </h2>
+                </div>
+
+                <div
+                  id="skills-tablist"
+                  class="skills-tablist"
+                  role="tablist"
+                  aria-label="Filter skills by category"
+                ></div>
+              </div>
+
+              <div id="skills-grid" class="skills-grid"></div>
+
+              <div id="skill-workbench" class="paper-card-elevated skill-workbench" aria-live="polite"></div>
+            </div>
+          </section>
+
+          <!-- SELECTED EXPLORATIONS SECTION -->
+          <section id="work" class="page-section" data-section>
+            <div class="container">
+              <div class="work-header">
+                <p class="section-kicker">03. Selected Explorations</p>
+                <h2 class="section-heading">How those skills come together in practice.</h2>
+                <p class="section-subcopy">
+                  A closer look at coursework workflows, frontend builds, and Group 31
+                  collaborative methods. Select any notebook to read the full breakdown.
+                </p>
+              </div>
+
+              <div id="work-grid" class="work-grid"></div>
+            </div>
+          </section>
+
+          <!-- CONTACT SECTION -->
+          <section id="contact" class="page-section" data-section>
+            <div class="container">
+              <div class="contact-grid">
+                <div class="contact-left reveal-on-scroll">
+                  <div>
+                    <p class="section-kicker">04. Contact Me</p>
+                    <h2 class="section-heading">
+                      Let's connect on a project or coursework idea.
+                    </h2>
+                    <p class="section-subcopy">
+                      Send a message through the validated contact form to notify me at
+                      <span class="text-ink-strong">aashirya12007@gmail.com</span>, or start a
+                      direct WhatsApp conversation right away.
+                    </p>
+                  </div>
+
+                  <div class="paper-card whatsapp-card">
+                    <div class="whatsapp-head">
+                      <div>
+                        <p class="whatsapp-label">Direct WhatsApp</p>
+                        <p class="whatsapp-number">+91 8009375166</p>
+                      </div>
+                      <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                      </svg>
+                    </div>
+                    <p class="whatsapp-note">
+                      Anything you draft in the message box on the right will automatically pre-fill
+                      into your WhatsApp chat link.
+                    </p>
+                    <a
+                      id="whatsapp-direct-link"
+                      href="https://wa.me/918009375166?text=Hi%20Aashirya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-whatsapp"
+                    >
+                      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                      </svg>
+                      <span>Message on WhatsApp</span>
+                      <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7" />
+                        <path d="M7 7h10v10" />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="paper-card direct-links-card">
+                    <div class="direct-link-row">
+                      <span class="direct-label">Email</span>
+                      <a href="mailto:aashirya12007@gmail.com" class="hero-text-link text-ink-strong">
+                        aashirya12007@gmail.com
+                      </a>
+                    </div>
+                    <div class="direct-link-row">
+                      <span class="direct-label">LinkedIn</span>
+                      <a href="https://www.linkedin.com/in/aashirya-srivastava-a9819a428" target="_blank" rel="noopener noreferrer" class="hero-text-link text-ink-strong">
+                        <span>aashirya-srivastava</span>
+                        <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M7 17 17 7" />
+                          <path d="M7 7h10v10" />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="direct-link-row direct-link-last">
+                      <span class="direct-label">GitHub</span>
+                      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hero-text-link text-ink-strong">
+                        <span>github.com</span>
+                        <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M7 17 17 7" />
+                          <path d="M7 7h10v10" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-right reveal-on-scroll">
+                  <div class="paper-card-elevated contact-form-card">
+                    <!-- Validated Form -->
+                    <form id="contact-form" novalidate class="contact-form">
+                      <div class="form-header">
+                        <h3>Send a Note</h3>
+                        <p>
+                          All required fields are verified before dispatching notification to
+                          aashirya12007@gmail.com.
+                        </p>
+                      </div>
+
+                      <div id="form-submit-error" class="form-banner-error hidden" role="alert"></div>
+
+                      <div class="form-field">
+                        <label for="contact-name">
+                          Your Name <span class="text-amber">*</span>
+                        </label>
+                        <input
+                          id="contact-name"
+                          name="name"
+                          type="text"
+                          autocomplete="name"
+                          required
+                          placeholder="e.g., Ananya Sharma"
+                        />
+                        <p id="contact-name-error" class="field-error hidden"></p>
+                      </div>
+
+                      <div class="form-row-2">
+                        <div class="form-field">
+                          <label for="contact-email">
+                            Email Address <span class="text-amber">*</span>
+                          </label>
+                          <input
+                            id="contact-email"
+                            name="email"
+                            type="email"
+                            autocomplete="email"
+                            required
+                            placeholder="you@example.com"
+                          />
+                          <p id="contact-email-error" class="field-error hidden"></p>
+                        </div>
+
+                        <div class="form-field">
+                          <label for="contact-phone">
+                            Phone / WhatsApp <span class="text-subtle">(optional)</span>
+                          </label>
+                          <input
+                            id="contact-phone"
+                            name="phone"
+                            type="tel"
+                            autocomplete="tel"
+                            placeholder="+91 98765 43210"
+                          />
+                          <p id="contact-phone-error" class="field-error hidden"></p>
+                        </div>
+                      </div>
+
+                      <div class="form-field">
+                        <div class="label-row">
+                          <label for="contact-message">
+                            Message <span class="text-amber">*</span>
+                          </label>
+                          <span id="message-char-count" class="font-mono-tabular char-count">0/2000</span>
+                        </div>
+                        <textarea
+                          id="contact-message"
+                          name="message"
+                          rows="4"
+                          required
+                          placeholder="Share details about your project, study collaboration, or inquiry..."
+                        ></textarea>
+                        <p id="contact-message-error" class="field-error hidden"></p>
+                      </div>
+
+                      <div class="form-footer">
+                        <button type="submit" id="contact-submit-btn" class="btn-amber">
+                          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m22 2-7 20-4-9-9-4Z" />
+                            <path d="M22 2 11 13" />
+                          </svg>
+                          <span id="contact-submit-label">Send Message</span>
+                        </button>
+                        <span class="form-recipient-note">Notifies aashirya12007@gmail.com</span>
+                      </div>
+                    </form>
+
+                    <!-- Confirmation State -->
+                    <div id="contact-confirmation" class="contact-confirmation hidden" role="status" aria-live="polite"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="container">
+            <div class="footer-grid">
+              <div class="footer-brand-col">
+                <p class="footer-name">Aashirya Srivastava</p>
+                <p class="footer-meta">
+                  Second Year · B.Tech Computer Science &amp; Engineering (Data Science + Artificial
+                  Intelligence) · Shri Ramswaroop Memorial University
+                </p>
+                <p class="footer-roll font-mono-tabular">Roll No. 202510101150010 · Group 31</p>
+              </div>
+
+              <div class="footer-links-col">
+                <p class="footer-col-title">Sections</p>
+                <ul class="footer-list">
+                  <li><a href="#home" data-nav="home">home</a></li>
+                  <li><a href="#about" data-nav="about">about</a></li>
+                  <li><a href="#skills" data-nav="skills">skills</a></li>
+                  <li><a href="#work" data-nav="work">work</a></li>
+                  <li><a href="#contact" data-nav="contact">contact</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-connect-col">
+                <p class="footer-col-title">Connect</p>
+                <ul class="footer-list">
+                  <li><a href="mailto:aashirya12007@gmail.com">aashirya12007@gmail.com</a></li>
+                  <li>
+                    <a
+                      href="https://wa.me/918009375166?text=Hi%20Aashirya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer-ext-link"
+                    >
+                      <span>WhatsApp (+91 8009375166)</span>
+                      <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7" />
+                        <path d="M7 7h10v10" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/aashirya-srivastava-a9819a428"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer-ext-link"
+                    >
+                      <span>LinkedIn</span>
+                      <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7" />
+                        <path d="M7 7h10v10" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer-ext-link"
+                    >
+                      <span>GitHub</span>
+                      <svg class="inline-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7" />
+                        <path d="M7 7h10v10" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              <p>© <span id="footer-year">2026</span> Aashirya Srivastava. Crafted with care.</p>
+              <p>SRMU · Lucknow, India</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Work Exploration Detail Modal -->
+    <div id="work-modal-backdrop" class="modal-backdrop hidden" role="presentation">
+      <div
+        id="work-modal-dialog"
+        class="paper-card-elevated modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="work-modal-title"
+      ></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
